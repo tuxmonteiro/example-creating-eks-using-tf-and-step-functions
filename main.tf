@@ -1,5 +1,5 @@
 resource "aws_sfn_state_machine" "eks_cluster_management_state_machine" {
-  role_arn   = aws_iam_role.eks_cluster_management_state_machine_execution_role.arn
+  role_arn = aws_iam_role.eks_cluster_management_state_machine_execution_role.arn
   definition = jsonencode({
     "StartAt" = "Create an EKS cluster"
     "States" = merge(

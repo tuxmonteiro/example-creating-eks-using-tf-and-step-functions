@@ -9,12 +9,12 @@ variable "nodegroup" {
 }
 
 variable "network" {
-  type = string
+  type    = string
   default = "management"
 }
 
 variable "tier" {
-  type = string
+  type    = string
   default = "private"
 }
 

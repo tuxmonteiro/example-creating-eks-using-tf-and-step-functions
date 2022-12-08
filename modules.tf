@@ -9,7 +9,7 @@ module "eventbridge" {
 
   rules = {
     crons = {
-      description         = "Run state machine"
+      description = "Run state machine"
       #schedule_expression = "at(yyyy-mm-ddThh:mm:ss)" NOT WORK. Provider version?
       schedule_expression = "cron(${local.cron_time})"
     }
