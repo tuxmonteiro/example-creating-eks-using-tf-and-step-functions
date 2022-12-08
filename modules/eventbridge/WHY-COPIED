@@ -1,0 +1,2 @@
+This original module haven't "one-shot" (at) schedule support, then has a issue when it's necessary force call one time the event.
+To resolv this was modified to ignore changes in "schedule_expression"
